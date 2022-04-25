@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
+
 const  Schema  = mongoose.Schema;
 
-export const ProductSchema = new Schema(
-    {
+export const ProductSchema = new Schema({
         name : {
             type : String,
             required : "Enter a product name"
@@ -21,6 +21,5 @@ export const ProductSchema = new Schema(
             type : Date,
             default : Date.now
         }
-    }   
-);
+});
 
