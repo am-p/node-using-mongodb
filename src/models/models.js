@@ -1,15 +1,15 @@
 import mongoose from 'mongoose';
-const { Schema } = mongoose;
+const  Schema  = mongoose.Schema;
 
-const productSchema = new Schema(
+export const ProductSchema = new Schema(
     {
         name : {
             type : String,
-            required : true
+            required : "Enter a product name"
         },
         description : {
             type : String,
-            required : true
+            required : "Enter a description"
         },
         category : String,
         price : Number,
