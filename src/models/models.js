@@ -11,8 +11,12 @@ export const ProductSchema = new Schema(
             type : String,
             required : "Enter a description"
         },
-        category : String,
-        price : Number,
+        category : {
+            type : String
+        },
+        price : {
+            type : Number
+        },
         created_date : {
             type : Date,
             default : Date.now
