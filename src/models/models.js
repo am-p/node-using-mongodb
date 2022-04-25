@@ -5,11 +5,11 @@ const  Schema  = mongoose.Schema;
 export const ProductSchema = new Schema({
     name : {
         type : String,
-        required : "Enter a product name"
+        required : 'Enter a product name'
     },
     description : {
         type : String,
-        required : "Enter a description"
+        required : 'Enter a description'
     },
     category : {
         type : String
